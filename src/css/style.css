@@ -1,0 +1,185 @@
+body {
+  font-family: "Arial", sans-serif;
+  color: slategrey;
+}
+
+.widget-container {
+  box-sizing: border-box;
+  display: flex;
+  
+  width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+
+  justify-content: space-between; 
+  align-items: flex-start; 
+
+  border: 2px solid gray;
+  border-radius: 10px 10px;
+  background-color: rgb(100, 213, 241);
+}
+
+.widget-column {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  padding: 10px;
+
+  justify-content: flex-start;
+
+  background-color: rgb(238, 235, 235);
+  border: 1px solid rgb(200, 196, 196);
+  border-radius: 5px;
+}
+
+.column-header {
+  box-sizing: border-box;
+  display: flex;
+  padding-right: 5px;
+  padding-left: 5px;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.column-header-dots,
+.column-footer-dots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15px;
+}
+
+.header-dot {
+  box-sizing: border-box;
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: slategrey;
+  border-radius: 50%;
+}
+
+.column-cards-box {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card {
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px gray;
+}
+
+.card:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+
+.card-header {
+  position: relative;
+  word-break: break-all;
+}
+
+.card-del {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  font-size: 24px;
+  line-height: 0.7;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.dragged {
+  position: absolute;
+  z-index: 50;
+  background-color: pink;  
+  pointer-events: none;  
+}
+
+.footer-add {
+  display: flex;
+  align-items: center;
+}
+
+.column-footer span {
+  display: block;
+}
+
+.add-sign {
+  font-size: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.add-text {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-text:hover {
+  text-decoration: underline;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-last-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.footer-manager {
+  display: flex;
+  align-items: center;
+}
+
+.footer-text-btn {
+  width: 75px;
+  height: 30px;
+  margin-right: 10px;
+  color: white;
+  font-weight: 700;
+
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: forestgreen;
+  box-shadow: 2px 2px 3px darkgreen;
+  cursor: pointer;
+}
+
+.footer-text-del {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+textarea {
+  height: 50px;
+  padding-left: 5px;
+  resize: none;
+  outline: none;
+  font-family: "Arial", sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
