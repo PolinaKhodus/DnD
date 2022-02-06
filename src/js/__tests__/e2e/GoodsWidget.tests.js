@@ -230,4 +230,6 @@ describe('Goods widget testing', () => {
 
     expect(result).toBe(0);
     });
+    });
   });
+});
