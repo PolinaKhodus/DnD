@@ -1,6 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable no-param-reassign */
-/* eslint-disable linebreak-style */
 export function moveAt(element, deltas) {
   // eslint-disable-next-line no-restricted-globals
   element.style.left = `${event.clientX - deltas.x}px`;

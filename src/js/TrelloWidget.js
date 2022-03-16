@@ -1,6 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable class-methods-use-this */
-/* eslint-disable linebreak-style */
 import Listener from './Listener';
 import Card from './Card';
 

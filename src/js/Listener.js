@@ -1,6 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable no-return-assign */
-/* eslint-disable linebreak-style */
 import Card from './Card';
 import * as fn from './function';
 
@@ -38,6 +36,8 @@ export default class Listeners {
 
         return;
       }
+
+      // TODO: Empty textarea field case
     }
 
     if (target.classList.contains('card-del')) {

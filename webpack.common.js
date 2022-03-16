@@ -1,13 +1,10 @@
 /* eslint-disable linebreak-style */
 const path = require('path');
-const HtmlWebPackPlugin = require('html-webpack-plugin');// eslint-disable-line import/no-extraneous-dependencies
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');// eslint-disable-line import/no-extraneous-dependencies
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/index.js',
-  optimization: {
-    minimize: true,
-  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',

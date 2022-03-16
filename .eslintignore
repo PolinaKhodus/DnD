@@ -1,3 +1,2 @@
 dist
-coverage
-doc
+__tests__
